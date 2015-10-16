@@ -64,20 +64,13 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = (
     'django.contrib.auth',
-    'django_admin_bootstrapped',
     'django.contrib.admin',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'authtools',
     'crispy_forms',
-    'easy_thumbnails',
-
-    'profiles',
-    'accounts',
-
 )
 
 MIDDLEWARE_CLASSES = (

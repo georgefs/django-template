@@ -1,25 +1,28 @@
 # In production set the environment variable like this:
-#    DJANGO_SETTINGS_MODULE={{ project_name }}.settings.production
+#    DJANGO_SETTINGS_MODULE=my_proj.settings.production
 from .base import *             # NOQA
 import logging.config
 
 # For security and performance reasons, DEBUG is turned off
 DEBUG = False
-TEMPLATE_DEBUG = False
 
 # Must mention ALLOWED_HOSTS in production!
 # ALLOWED_HOSTS = ["{{ project_name }}.com"]
 
 # Cache the templates in memory for speed-up
 loaders = [
-    ('django.template.loaders.cached.Loader', [
-        'django.template.loaders.filesystem.Loader',
-        'django.template.loaders.app_directories.Loader',
-    ]),
+    (
+        'django.template.loaders.cached.Loader',
+        [
+            'django.template.loaders.filesystem.Loader',
+            'django.template.loaders.app_directories.Loader',
+        ]
+    ),
 ]
 
 TEMPLATES[0]['OPTIONS'].update({"loaders": loaders})
-TEMPLATES[0].update({"APP_DIRS": False})
+TEMPLATES[0]['OPTIONS'].update({"debug": False})
+TEMPLATES[0].update({"APP_DIRS": DEBUG})
 
 # Define STATIC_ROOT for the collectstatic command
 STATIC_ROOT = join(BASE_DIR, '..', 'site', 'static')

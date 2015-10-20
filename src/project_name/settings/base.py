@@ -73,7 +73,7 @@ DJANGO_APPS = (
 )
 
 THIRD_PARTY_APPS = (
-    'crispy_forms',
+    'django_extensions',
 )
 
 LOCAL_APPS = (

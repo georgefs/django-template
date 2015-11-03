@@ -17,9 +17,6 @@ INSTALLED_APPS += (
 # Show emails to console in DEBUG mode
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-# Show thumbnail generation errors
-THUMBNAIL_DEBUG = True
-
 # Log everything to the logs directory at the top
 LOGFILE_ROOT = join(dirname(BASE_DIR), 'logs')
 

@@ -22,7 +22,7 @@ At first, you should make sure you have [virtualenv](http://www.virtualenv.org/)
 
 after that, just cd to your\_project_name:
 
-   cd your\_project_name
+    cd your\_project_name
 
 Then create your virtualenv:
 

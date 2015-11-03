@@ -6,7 +6,7 @@ This is a django template for gliacloud
 
 ### Install Django
 
-To install django, justtype the following command
+To install django, type the following command
 
     sudo pip install django
 
@@ -18,7 +18,7 @@ To create the project, run the following command and please replace your\_projec
 
 ### Setting Virtualenv
 
-At first, you should make sure you have [virtualenv](http://www.virtualenv.org/) installed. 
+At first, you should make sure you have [virtualenv](http://www.virtualenv.org/) installed.
 
 after that, just cd to your\_project_name:
 
@@ -27,7 +27,7 @@ after that, just cd to your\_project_name:
 Then create your virtualenv:
 
     virtualenv venv
-    
+
 Second, you need to enable the virtualenv by
 
     source venv/bin/activate

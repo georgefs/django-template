@@ -3,11 +3,8 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 
-from . import views
-
 urlpatterns = [
-    url(r'^$', views.HomePage.as_view(), name='home'),
-    url(r'^about/$', views.AboutPage.as_view(), name='about'),
+    # url(r'^$', views.HomePage.as_view(), name='home'),
     url(r'^admin/', include(admin.site.urls)),
 ]
 

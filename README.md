@@ -12,7 +12,7 @@ To install django, type the following command
 
 ### Create Django project from the template
 
-To create the project, run the following command and please replace your\_project_name to what you like :
+To create the project, run the following command and please replace your_project_name to what you like :
 
     django-admin.py startproject --template=https://github.com/livingbio/django-template/archive/master.zip --extension=py,rst,html your_project_name
 
@@ -20,9 +20,9 @@ To create the project, run the following command and please replace your\_projec
 
 At first, you should make sure you have [virtualenv](http://www.virtualenv.org/) installed.
 
-after that, just cd to your\_project_name:
+after that, just cd to your_project_name:
 
-    cd your\_project_name
+    cd your_project_name
 
 Then create your virtualenv:
 

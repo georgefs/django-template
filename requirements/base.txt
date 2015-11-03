@@ -3,3 +3,10 @@ django-environ>=0.3.0
 django-braces>=1.8.0
 ipython
 django-extensions
+django-bootstrap3-sass
+django-compressor
+fake-factory
+fabric
+# huey==0.4.9
+# redis==2.10.5
+# sentry

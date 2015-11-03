@@ -3,5 +3,3 @@ psycopg2
 gunicorn
 raven
 django-redis
-huey==0.4.9
-redis==2.10.5

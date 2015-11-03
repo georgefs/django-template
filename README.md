@@ -1,22 +1,36 @@
-# {{ project_name }}
+# Django Template for GliaCloud
 
-{{ project_name }} is a _short description_. It is built with [Python][0] using the [Django Web Framework][1].
+This is a django template for gliacloud
 
-This project has the following basic apps:
+## INSTALLATION & SETTINGS
 
-* App1 (short desc)
-* App2 (short desc)
-* App3 (short desc)
+### Install Django
 
-## Installation
+To install django, justtype the following command
 
-### Quick start
+    sudo pip install django
 
-To set up a development environment quickly, first install Python 3. It
-comes with virtualenv built-in. So create a virtual env by:
+### Create Django project from the template
 
-    1. `$ python3 -m venv {{ project_name }}`
-    2. `$ . {{ project_name }}/bin/activate`
+To create the project, run the following command and please replace your\_project_name to what you like :
+
+    django-admin.py startproject --template=https://github.com/livingbio/django-template/archive/master.zip --extension=py,rst,html your_project_name
+
+### Setting Virtualenv
+
+At first, you should make sure you have [virtualenv](http://www.virtualenv.org/) installed. 
+
+after that, just cd to your\_project_name:
+
+   cd your\_project_name
+
+Then create your virtualenv:
+
+    virtualenv venv
+    
+Second, you need to enable the virtualenv by
+
+    source venv/bin/activate
 
 Install all dependencies:
 

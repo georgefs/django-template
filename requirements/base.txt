@@ -4,3 +4,5 @@ django-braces>=1.8.0
 easy-thumbnails>=2.2
 ipython
 django-extensions
+huey==0.4.9
+redis==2.10.5

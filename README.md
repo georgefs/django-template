@@ -22,6 +22,10 @@ Install all dependencies:
 
     pip install -r requirements.txt
 
+Settings are stored in environment variables via [django-environ](http://django-environ.readthedocs.org/en/latest/). The quickiest way to start is to rename `local.sample.env`
+
+    mv {{ project_name }}/src/{{ project_name }}/local.sample.env {{ project_name }}/src/{{ project_name }}/local.env
+
 Run migrations:
 
     python manage.py migrate

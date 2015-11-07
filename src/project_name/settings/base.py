@@ -12,9 +12,6 @@ from os.path import dirname, join, exists
 
 # Build paths inside the project like this: join(BASE_DIR, "directory")
 BASE_DIR = dirname(dirname(dirname(__file__)))
-STATICFILES_DIRS = [join(BASE_DIR, 'static')]
-MEDIA_ROOT = join(BASE_DIR, 'media')
-MEDIA_URL = "/media/"
 
 # Use Django templates using the new Django 1.8 TEMPLATES settings
 TEMPLATES = [
@@ -74,6 +71,8 @@ DJANGO_APPS = (
 
 THIRD_PARTY_APPS = (
     'django_extensions',
+    'compressor',
+    'bootstrap3_sass',
 )
 
 LOCAL_APPS = (
@@ -94,7 +93,7 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = '{{ project_name }}.urls'
 
-WSGI_APPLICATION = 'my_proj.wsgi.application'
+WSGI_APPLICATION = '{{ project_name }}.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
@@ -123,4 +122,28 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATIC_ROOT = join(BASE_DIR, 'assets')
+
+STATICFILES_DIRS = [join(BASE_DIR, 'static')]
+
+# URL that handles the media served from MEDIA_ROOT. Make sure to use a
+# trailing slash.
+# Examples: "http://example.com/media/", "http://media.example.com/"
+
+MEDIA_ROOT = join(BASE_DIR, 'media')
+
+MEDIA_URL = "/media/"
+
 ALLOWED_HOSTS = []
+
+# List of finder classes that know how to find static files in
+# various locations.
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'compressor.finders.CompressorFinder',
+)
+
+COMPRESS_PRECOMPILERS = (
+    ('text/x-scss', 'django_libsass.SassCompiler'),
+)

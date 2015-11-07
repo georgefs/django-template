@@ -58,5 +58,12 @@ Desktop.ini
 # Project settings
 ./site/
 
+# PyCharm
+*.iml
+.idea/
+*.ipr
+*.iws
+
+
 # Cache
 CACHE

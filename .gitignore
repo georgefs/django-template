@@ -64,6 +64,12 @@ Desktop.ini
 *.ipr
 *.iws
 
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
 
 # Cache
 CACHE

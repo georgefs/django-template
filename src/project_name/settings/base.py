@@ -72,7 +72,6 @@ DJANGO_APPS = (
 THIRD_PARTY_APPS = (
     'django_extensions',
     'compressor',
-    'bootstrap3_sass',
 )
 
 LOCAL_APPS = (

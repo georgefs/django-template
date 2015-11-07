@@ -7,6 +7,3 @@ django-bootstrap3-sass
 django-compressor
 fake-factory
 fabric
-# huey==0.4.9
-# redis==2.10.5
-# sentry

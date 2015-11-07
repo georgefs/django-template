@@ -1,3 +1,5 @@
+![Django Template](https://api.travis-ci.org/livingbio/django-template.svg)
+
 # Django Template for GliaCloud
 
 This is a django template for gliacloud

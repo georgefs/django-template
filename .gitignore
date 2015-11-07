@@ -26,6 +26,10 @@ local.env
 # Django stuff:
 *.mo
 *.pot
+*.log
+venv/
+assets/
+local.db
 
 # Eclipse
 .project
@@ -54,9 +58,6 @@ tramp
 # Windows
 Thumbs.db
 Desktop.ini
-
-# Project settings
-./site/
 
 # PyCharm
 *.iml

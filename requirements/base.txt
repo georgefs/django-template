@@ -19,12 +19,13 @@ ipython==4.0.0
 # http://django-extensions.readthedocs.org/en/latest/
 django-extensions==1.5.9
 
-# A simple Django app to import bootstrap3-sass.
-django-bootstrap3-sass==3.3.2.2
-
 # Compresses linked and inline JavaScript or CSS into a single cached file.
 # https://django-compressor.readthedocs.org/en/latest/
 django-compressor==1.5
+
+# A django-compressor filter to compile Sass files using libsass.
+# https://github.com/torchbox/django-libsass
+django-libsass
 
 # Faker is a Python package that generates fake data for you.
 # http://www.joke2k.net/faker/

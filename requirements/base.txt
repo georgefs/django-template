@@ -35,3 +35,7 @@ fake-factory==0.5.3
 # SSH for application deployment or systems administration tasks.
 # http://www.fabfile.org/
 Fabric==1.10.2
+
+# Mkdocs - Project documentation with Markdown.
+# http://www.mkdocs.org/
+mkdocs==0.14.0

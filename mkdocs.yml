@@ -1,4 +1,4 @@
-site_name: Documentation for {{ test_project }}
+site_name: Documentation for {{ project_name }}
 
 pages:
   - Home: index.md

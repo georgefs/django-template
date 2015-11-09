@@ -16,7 +16,7 @@ To install django, type the following command
 
 To create the project, run the following command and please replace your_project_name to what you like :
 
-    django-admin.py startproject --template=https://github.com/livingbio/django-template/archive/master.zip --extension=py,md your_project_name
+    django-admin.py startproject --template=https://github.com/livingbio/django-template/archive/master.zip --extension=py,md,yml your_project_name
 
 ### Setting Virtualenv
 
@@ -45,6 +45,14 @@ Settings are stored in environment variables via [django-environ](http://django-
 Run migrations:
 
     python manage.py migrate
+
+### Documentation
+
+You can use mkdocs to write beatuiful documentations. By typing:
+
+    mkdocs serve
+
+Then you can see your document in http://localhost:8001/
 
 ### Detailed instructions
 

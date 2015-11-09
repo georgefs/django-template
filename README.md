@@ -48,7 +48,7 @@ Run migrations:
 
 ### Documentation
 
-You can use mkdocs to write beatuiful documentations. By typing:
+You can use [mkdocs](http://www.mkdocs.org/) to write beatuiful documentations. By typing:
 
     mkdocs serve
 

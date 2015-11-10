@@ -25,7 +25,7 @@ django-compressor==1.5
 
 # A django-compressor filter to compile Sass files using libsass.
 # https://github.com/torchbox/django-libsass
-django-libsass
+django-libsass==0.4
 
 # Faker is a Python package that generates fake data for you.
 # http://www.joke2k.net/faker/

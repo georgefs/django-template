@@ -58,3 +58,74 @@ Then you can see your document in http://localhost:8001/
 
 Take a look at the docs for more information.
 
+
+
+OR
+
+
+set Docker
+===
+
+MAC 
+---
+
+download and install docker-toolbox
+https://www.docker.com/docker-toolbox
+
+####create docker vm
+```
+docker-machine create -d virtualbox --virtualbox-import-boot2docker-vm boot2docker-vm docker
+```
+
+####set docker env
+copy
+```
+docker-machine start docker
+eval `docker-machine env default`
+```
+paste to ~/.zshrc or ~/.bashrc
+
+ubuntu 14.04
+---
+
+reference
+http://docs.docker.com/engine/installation/ubuntulinux/
+
+install docker 
+```
+sudo apt-get update
+sudo apt-get install linux-image-generic-lts-trusty
+sudo reboot
+
+sudo reboot
+sudo apt-get install docker-engine
+sudo service docker start
+```
+
+
+
+docker.sh
+===
+這是project base 的script
+負責幫你用docker 處理 project 的 執行, 測試, 建立環境...etc 固定工作的script
+
+基本上有幾個command
+---
+
+####build
+`./docker.sh build`
+負責用 docker 建立project 的環境
+
+####test
+`./docker.sh test`
+負責用 docker 跑 project的測試
+
+####run
+`./docker.sh run`
+負責用 docker 執行script
+
+####runserver
+`./docker.sh runserver`
+負責用 docker 開啟 django server
+
+

@@ -25,7 +25,7 @@ TEMPLATES[0]['OPTIONS'].update({"debug": False})
 TEMPLATES[0].update({"APP_DIRS": DEBUG})
 
 # Define STATIC_ROOT for the collectstatic command
-STATIC_ROOT = join(BASE_DIR, '..', 'site', 'static')
+STATIC_ROOT = join(BASE_DIR, 'assets')
 
 # Log everything to the logs directory at the top
 LOGFILE_ROOT = join(dirname(BASE_DIR), 'logs')
@@ -68,11 +68,6 @@ LOGGING = {
 logging.config.dictConfig(LOGGING)
 
 HUEY = {
-    'backend': 'huey.backends.redis_backend',  # required.
-    'name': 'op',
-    'connection': {'host': "redis.gliacloud.com", 'port': "6379"},
-    'always_eager': False,
-    'consumer_options': {'workers': 4},
 }
 
 

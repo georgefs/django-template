@@ -2,6 +2,10 @@
 # https://www.djangoproject.com/
 Django==1.9
 
+# pytz - World Timezone Definitions for Python
+# http://pytz.sourceforge.net/
+pytz==2015.7
+
 # Django-environ allows you to utilize 12factor inspired environment variables
 # to configure your Django application.
 # http://django-environ.readthedocs.org

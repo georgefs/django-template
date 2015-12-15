@@ -16,7 +16,7 @@ To install django, type the following command
 
 To create the project, run the following command and please replace your_project_name to what you like :
 
-    django-admin.py startproject --template=https://github.com/livingbio/django-template/archive/master.zip --extension=py,md,yml your_project_name
+    django-admin.py startproject --template=https://github.com/livingbio/django-template/archive/master.zip --extension=py,md,yml,ini your_project_name
 
 ### Setting Virtualenv
 
@@ -40,7 +40,7 @@ Install all dependencies:
 
 Settings are stored in environment variables via [django-environ](http://django-environ.readthedocs.org/en/latest/). The quickiest way to start is to rename `local.sample.env`
 
-    mv {{ project_name }}/src/{{ project_name }}/local.sample.env {{ project_name }}/src/{{ project_name }}/local.env
+    cp {{ project_name }}/src/{{ project_name }}/local.sample.env {{ project_name }}/src/{{ project_name }}/local.env
 
 Run migrations:
 

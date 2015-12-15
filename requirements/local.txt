@@ -21,10 +21,6 @@ pytest-django==2.9.1
 # http://pytest.org/latest/
 pytest==2.8.3
 
-# Code coverage measurement for Python
-# https://coverage.readthedocs.org/en/coverage-4.0.2/
-coverage==4.0.2
-
 # Pytest plugin for measuring coverage.
 # https://pypi.python.org/pypi/pytest-cov
 pytest-cov==2.2.0

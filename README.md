@@ -1,4 +1,4 @@
-![Django Template](https://api.travis-ci.org/livingbio/django-template.svg)
+[![Build Status](https://travis-ci.org/livingbio/django-template.svg?branch=master)](https://travis-ci.org/livingbio/django-template)
 
 # Django Template for GliaCloud
 

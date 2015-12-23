@@ -40,7 +40,7 @@ Install all dependencies:
 
 Settings are stored in environment variables via [django-environ](http://django-environ.readthedocs.org/en/latest/). The quickiest way to start is to rename `local.sample.env`
 
-    cp {{ project_name }}/src/{{ project_name }}/local.sample.env {{ project_name }}/src/{{ project_name }}/local.env
+    cp {{ project_name }}/src/{{ project_name }}/settings/local.sample.env {{ project_name }}/src/{{ project_name }}/settings/local.env
 
 Run migrations:
 

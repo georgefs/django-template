@@ -45,6 +45,12 @@ LOGGING = {
         },
     },
     'handlers': {
+        'django_log_file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': join(LOGFILE_ROOT, 'django.log'),
+            'formatter': 'verbose'
+        },
         'proj_log_file': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
@@ -58,6 +64,11 @@ LOGGING = {
         }
     },
     'loggers': {
+        'django': {
+            'handlers': ['django_log_file'],
+            'propagate': True,
+            'level': 'DEBUG',
+        },
         'project': {
             'handlers': ['proj_log_file'],
             'level': 'DEBUG',

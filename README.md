@@ -38,13 +38,27 @@ Install all dependencies:
 
     pip install -r requirements.txt
 
-Settings are stored in environment variables via [django-environ](http://django-environ.readthedocs.org/en/latest/). The quickiest way to start is to rename `local.sample.env`
+### Setting up local environment variables
 
-    cp {{ project_name }}/src/{{ project_name }}/settings/local.sample.env {{ project_name }}/src/{{ project_name }}/settings/local.env
+Settings are stored in environment variables via [django-environ](http://django-environ.readthedocs.org/en/latest/). The quickiest way to start is to copy and rename `local.sample.env` into `local.env`:
 
-Run migrations:
+    cp src/{{ project_name }}/settings/local.sample.env src/{{ project_name }}/settings/local.env
+
+Then edit the SECRET_KEY in local.env file, replace `{{ secret_key }}` into any [Django Secret Key](http://www.miniwebtool.com/django-secret-key-generator/), for example:
+
+    SECRET_KEY=twvg)o_=u&@6^*cbi9nfswwh=(&hd$bhxh9iq&h-kn-pff0&&3
+
+
+### Run web server
+
+After that, just cd to `src` folder:
+
+    cd src
+
+And run migrate and http server:
 
     python manage.py migrate
+    python manage.py runserver
 
 ### Documentation
 

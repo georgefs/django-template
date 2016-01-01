@@ -21,7 +21,7 @@ ipython==4.0.1
 
 # A collection of custom extensions for the Django Framework
 # http://django-extensions.readthedocs.org/en/latest/
-django-extensions==1.6.0
+django-extensions==1.6.1
 
 # Compresses linked and inline JavaScript or CSS into a single cached file.
 # https://django-compressor.readthedocs.org/en/latest/

@@ -23,3 +23,9 @@ install:
 
 script:
   - python manage.py test
+
+deploy:
+  provider: script
+  script: $TRAVIS_BUILD_DIR/kube/deploy.sh
+  on:
+    branch: master

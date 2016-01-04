@@ -22,7 +22,9 @@ install:
   - cp src/{{ project_name }}/settings/local.sample.env src/{{ project_name }}/settings/local.env
 
 script:
+  - cd src
   - python manage.py test
+  - cd $TRAVIS_BUILD_DIR
 
 deploy:
   provider: script

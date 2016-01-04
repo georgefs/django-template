@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/livingbio/{{ project_name }}.svg?branch=master)](https://travis-ci.org/livingbio/{{ project_name }})
+[![Build Status](https://travis-ci.com/livingbio/{{ project_name }}.svg?token=gtAdcayz7USgW6ds1NJu&branch=master)](https://travis-ci.com/livingbio/{{ project_name }})
 
 # Django Template for GliaCloud
 

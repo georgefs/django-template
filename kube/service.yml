@@ -13,5 +13,5 @@ spec:
   # but this time it identifies the set of pods to load balance
   # traffic to.
   selector:
-    app: {{ project_name }}
+    app: {{ project_name }}-server
   type: NodePort

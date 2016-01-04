@@ -1,7 +1,11 @@
+sudo: required
 language: python
-
 python:
   - "2.7"
+
+cache: pip
+services:
+  - docker
 
 before_install:
   - pip install -U pip
@@ -15,11 +19,7 @@ env:
 install:
   - pip wheel -r requirements.txt
   - pip install -r requirements.txt
-  - cd ..
-  - django-admin.py startproject --template=./django-template --extension=py,md my_proj
-  - cd my_proj/src
-  - cp my_proj/settings/local.sample.env my_proj/settings/local.env
-  - python manage.py migrate
+  - cp src/{{ project_name }}/settings/local.sample.env src/{{ project_name }}/settings/local.env
 
 script:
   - python manage.py test
